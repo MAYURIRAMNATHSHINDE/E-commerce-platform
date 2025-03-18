@@ -233,6 +233,50 @@ button:hover {
     background-color: #0056b3;
 }
 
+
+/* Special Categories Section */
+.special-categories {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+}
+
+.special-categories h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Backgrounds */
+.men { background: linear-gradient(135deg, #1a237e, #283593); }
+.women { background: linear-gradient(135deg, #880e4f, #ad1457); }
+.electronics { background: linear-gradient(135deg, #004d40, #00695c); }
+.kids { background: linear-gradient(135deg, #f57f17, #fbc02d); }
+
         
     </style>
 </head>
@@ -266,9 +310,6 @@ button:hover {
         </div>
     </header>
 
-    <!-- <div class="banner">
-        <img src="./assets/banner.jpg" alt="" class="hero-section">
-    </div> -->
     <section class="hero-banner">
         <div class="banner-content">
             <h1>Welcome to ShopEase!</h1>
@@ -277,6 +318,23 @@ button:hover {
         </div>
     </section>
  
+    <section class="special-categories">
+        <h2>Shop by Category</h2>
+        <div class="category-container">
+            <a href="/products?category=men" class="category-card men">
+                <h3>Men</h3>
+            </a>
+            <a href="/products?category=women" class="category-card women">
+                <h3>Women</h3>
+            </a>
+            <a href="/products?category=electronics" class="category-card electronics">
+                <h3>Electronics</h3>
+            </a>
+            <a href="/products?category=kids" class="category-card kids">
+                <h3>Kids</h3>
+            </a>
+        </div>
+    </section>
     
 
     <script>
