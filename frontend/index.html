@@ -168,6 +168,7 @@
     animation: fadeIn 1.5s ease-in-out;
     border-radius: 3px;
     margin: 19px;
+    margin-top: -20px;
 }
 
 .banner-content {
@@ -237,11 +238,11 @@ button:hover {
 /* Special Categories Section */
 .special-categories {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     background: #f9f9f9;
 }
 
-.special-categories h2 {
+.special-categories h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #333;
@@ -249,7 +250,7 @@ button:hover {
 
 .category-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 2rem;
 }
 
@@ -257,7 +258,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 130px;
+    height: 90px;
     border-radius: 12px;
     text-decoration: none;
     color: white;
@@ -319,19 +320,19 @@ button:hover {
     </section>
  
     <section class="special-categories">
-        <h2>Shop by Category</h2>
+        <h3>Shop by Category</h3>
         <div class="category-container">
             <a href="/products?category=men" class="category-card men">
-                <h3>Men</h3>
+                <h5>Men</h5>
             </a>
             <a href="/products?category=women" class="category-card women">
-                <h3>Women</h3>
+                <h5>Women</h5>
             </a>
             <a href="/products?category=electronics" class="category-card electronics">
-                <h3>Electronics</h3>
+                <h5>Electronics</h5>
             </a>
             <a href="/products?category=kids" class="category-card kids">
-                <h3>Kids</h3>
+                <h5>Kids</h5>
             </a>
         </div>
     </section>
